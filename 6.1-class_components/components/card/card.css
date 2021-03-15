@@ -1,0 +1,18 @@
+body{
+ display: flex;
+ justify-content: center;
+}
+.cards{
+ display: flex;
+ justify-content: space-around;
+ 
+}
+.card{
+ margin: 30px;
+}
+.aClass{
+  text-transform: uppercase;
+  padding: 3px;
+  color: tomato;
+  text-decoration: none;
+ }
