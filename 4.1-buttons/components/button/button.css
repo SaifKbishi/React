@@ -1,0 +1,12 @@
+.important{
+ font-weight: bold;
+
+}
+
+body{
+ background: green;
+}
+button{
+ margin: 10px;
+ padding: 5px;
+}
