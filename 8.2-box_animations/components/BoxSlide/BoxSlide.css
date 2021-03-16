@@ -1,0 +1,28 @@
+#box1{
+ width: 150px;
+ height: 50px;
+ background: red;
+}
+.hidden{
+ transform: translateX(-700%);
+}
+.sliding{
+ animation-name: example; 
+ animation-duration: 4s;
+}
+
+@keyframes example {
+ from {transform: translateX(-700%);}
+ to {transform: translateX(0);}
+}
+
+.box2{
+ width: 250px;
+ height: 150px;
+ background: green;
+}
+.box3{
+ width: 300px;
+ height: 200px;
+ background: blue;
+}

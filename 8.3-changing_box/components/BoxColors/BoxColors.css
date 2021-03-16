@@ -1,0 +1,15 @@
+body{
+ margin: 50px;
+ display: flex;
+ justify-content: center;
+ }
+.box{
+ width: 200px;
+ height: 200px;
+ background: blue;
+
+}
+
+.yellow{
+ background: yellow;
+}
