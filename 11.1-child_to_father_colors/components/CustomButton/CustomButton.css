@@ -1,0 +1,15 @@
+body{
+ margin: 50px;
+ display: flex;
+ justify-content: center;
+ }
+
+ .theForm{
+  flex-direction: column;
+ }
+
+ .btn{
+  width: 150px;
+  font-size: 20px;
+  margin: 5px;
+ }
