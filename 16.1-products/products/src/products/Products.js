@@ -1,30 +1,34 @@
 import React from 'react';
 import storeItems from '../store';
+import {Link} from 'react-router-dom';
 
 class Products extends React.Component{
 state = {
  data:[],
- myName: 'Saif',
 }
 componentDidMount(){
  this.setState({data: storeItems});
 }
 
  render(){
-  console.log('from products: ',this.state.data)
-  console.log('from products:0 ',this.state.data[0])
-  const pdata = this.state.data;
+  console.log('from products: ',this.state.data);  
+
+  const renderProducts = ()=>{ 
+   console.log(this.props)
+   return this.state.data.map((product) => { 
+    return(
+     <Link key={product.id} to={`${this.props.location.pathname}/${product.id}`}>{product.id}: {product.title}<br/>
+     <img className="pImage" alt="dvgfgs" src={product.imageUrl}/><br/>
+     {product.price}$, {product.size}
+     </Link>
+    );
+   });
+  }
+ 
   return (
-   <div>
-    Products goes here:<br/>
-    first product:<br/>
-         {storeItems[0].title}
-
-    <p> {this.state.data && this.state.data.forEach(elem => elem.title)}<br/> </p>
-
-    </div>
+   <div>{renderProducts()}  </div>
   );
- } 
+ }
 }
-
 export default Products;
+
