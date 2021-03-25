@@ -14,7 +14,7 @@ componentDidMount(){
 }
 
  render(){
-  console.log('from products: ',this.state.data);
+  console.log('from productDetail: ',this.state.data);
   console.log(this.props.match.params.id)
 
   return (
